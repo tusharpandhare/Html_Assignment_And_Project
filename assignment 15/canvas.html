@@ -1,0 +1,125 @@
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ HTML CANVAS
++ Assignment no       : 15
++ Title               : Create the image using canvas as depicted below
++ Start date          : 11/feb/2020
++ End Date            : 11/feb/2020
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            text-align: center;
+        }
+    canvas{
+        border: 6px double rgb(160, 221,69);
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>canvas</title>
+</head>
+<body>
+    <!--canvas element of height=1000px and width=900px-->
+    <canvas id="canvas" width="1000px" height="900px"></canvas>
+    <!--script and coordinate for canvas to draw andoid-->
+    <script>
+        var canvas=document.getElementById("canvas");
+        var c=canvas.getContext('2d');
+        c.beginPath();
+        // upper half circle
+        c.arc(500,300,150,0,1*Math.PI,true);
+        c.fill();
+        c.fillStyle="rgb(160, 221, 69)";
+        //rectangle with bottom left and bottom right curve
+        c.moveTo(350,570);
+        c.lineTo(350,320);
+        c.lineTo(650,320);
+        c.lineTo(650,570);
+        c.quadraticCurveTo(650,600,620,610);
+        c.lineTo(400,610);
+        c.quadraticCurveTo(350,610,350,570);  
+             //drawing and filling left side hand of android
+        // c.moveTo(330,320);
+        // c.lineTo(330,510);
+        // c.quadraticCurveTo(330,530,310,540);
+        // c.lineTo(300,540);
+        // c.quadraticCurveTo(279,530,280,510);
+        // c.lineTo(280,320);
+        // c.quadraticCurveTo(280,300,300,290);
+        // c.lineTo(300,290);
+        // c.quadraticCurveTo(325,290,330,320);
+               //drawing and filling right hand of android
+        // c.moveTo(720,320);
+        // c.lineTo(720,510);
+        // c.quadraticCurveTo(720,530,700,540);
+        // c.lineTo(690,540);
+        // c.quadraticCurveTo(669,530,670,510);
+        // c.lineTo(670,320);
+        // c.quadraticCurveTo(670,300,690,290);
+        // c.lineTo(690,290);
+        // c.quadraticCurveTo(715,290,720,320);
+        
+                 //drawing left leg of android
+        // c.moveTo(470,610);
+        // c.lineTo(470,710);
+        // c.quadraticCurveTo(470,730,450,740);
+        // c.lineTo(440,740);
+        // c.quadraticCurveTo(420,730,420,710);
+        // c.lineTo(420,610);
+            //drawing right leg of android
+        // c.moveTo(580,610);
+        // c.lineTo(580,710);
+        // c.quadraticCurveTo(580,730,560,740);
+        // c.lineTo(550,740);
+        // c.quadraticCurveTo(530,730,530,710);
+        // c.lineTo(530,610);
+        c.fill();
+        //drawing left eyes
+        c.fillStyle="white";
+        c.beginPath();
+        c.arc(435,230,15,0,2*Math.PI);
+        c.fill();
+        //drawing right eyes
+        c.beginPath();
+        c.arc(565,230,15,0,2*Math.PI);
+        c.fill();
+        //drawing android left antenna
+        c.beginPath();
+        c.moveTo(450,210);
+        c.lineTo(400,100);
+        c.lineWidth="15"
+        c.lineCap="round";
+        c.strokeStyle="rgb(160, 221, 69)"
+        c.stroke();
+        //drawing android right antenna
+        c.beginPath();
+        c.moveTo(550,210);
+        c.lineTo(600,100);
+        c.lineWidth="15"
+        c.stroke();
+        //drawing and filling right hand of android
+        c.beginPath();
+        c.moveTo(695,330);
+        c.lineTo(695,510);
+        c.lineWidth=50;
+        
+        //drawing and filling left hand of android
+        
+        c.moveTo(305,330);
+        c.lineTo(305,510);
+        //drawing and filling left leg of android
+        c.moveTo(440,610);
+        c.lineTo(440,710);
+        //drawing and filling right leg of android
+        c.moveTo(560,610);
+        c.lineTo(560,710);
+        c.lineWidth=50;
+        c.lineCap="round";
+        c.stroke();
+        //drawing 
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ HTML
++ ASSIGNMENT No:  04
++ TITLE        :  Create the webpage to display the following JavaScript code.
++ START DATE   :  29/jan/2020
++ END DATE     :  29/jan/2020
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment no: 4</title>
+</head>
+<body style="background-color: black;">
+    <code style="color: white; font-size: 17px; font-weight: 500;">
+        <pre>
+<span style="color: rgb(122, 121, 121);">&lt;!--todo: put this in a different file!!! --&gt;</span><!--comment-->
+&lt;<span style="color:rgb(230, 32, 154);">script</span>&gt;
+<span style="font-style:italic; color:rgb(25, 182, 230)">function</span> <span style="color:yellowgreen;">authenticateUser</span>(<span style="color: rgb(243, 142, 9);">username, password</span>) {
+<span style="font-style:italic; color:rgb(25, 182, 230)">  var</span> accounts <span style="color: rgb(230, 32, 154);">=</span> apiService.sql(
+    <span style="color:rgb(230, 182, 93)">"SELECT * FROM users"</span>
+  );
+
+  <span style="color:rgb(230, 32, 154)">for</span>(<span style="font-style:italic; color:rgb(25, 182, 230)">var</span> i <span style="color: rgb(230, 32, 154);">=</span><span style="color: rgb(85, 25, 182);">0</span>;  i <span style="color: rgb(230, 32, 154);">&lt;</span> accounts.<span style="color:rgb(25, 182, 230)">length</span>;  i<span style="color: rgb(230, 32, 154);">++</span>) {
+       <span style="font-style:italic; color:rgb(25, 182, 230)">var</span>  account <span style="color: rgb(230, 32, 154);">=</span> accounts[i];
+      <span style="color: rgb(230, 32, 154);">if</span>(account.username <span style="color: rgb(230, 32, 154);">==</span> username <span style="color: rgb(230, 32, 154);">&&</span>
+        account.password <span style="color: rgb(230, 32, 154);">==</span> password)
+      {
+        <span style="color: rgb(230, 32, 154);">return</span> <span style="color:rgb(85, 25, 182);">true</span>;
+      }
+    }
+    <span style="color: rgb(230, 32, 154);">if</span> (<span style="color: rgb(230, 182, 93);">"true"<span style="color: rgb(230, 32, 154);"> == </span>"true"</span>) {
+    <span style="color: rgb(230, 32, 154);">return</span> <span style="color:rgb(85, 25, 182);">false</span>;
+    }
+}
+    
+<span style="color: rgb(230, 32, 154);">&dollar;</span>(<span style="color: rgb(230, 182, 93);">'#login'</span>) .<span style="color:rgb(25, 182, 230)">click</span>(<span style="font-style:italic; color:rgb(25, 182, 230)">function</span>() {     
+  <span style="font-style:italic; color:rgb(25, 182, 230)">var</span> username <span style="color: rgb(230, 32, 154);">= $</span>(<span style="color:rgb(230, 182, 93);">"#username"</span>).val();
+  <span style="font-style:italic; color:rgb(25, 182, 230)">var</span> password <span style="color: rgb(230, 32, 154);">= $</span>(<span style="color: rgb(230, 182, 93);">"#password"</span>).val();
+    
+  <span style="font-style:italic; color:rgb(25, 182, 230)">var</span> authenticated <span style="color: rgb(230, 32, 154);">=</span> authenticateUser(username, password);
+    
+  <span style="color: rgb(230, 32, 154);">if</span>(authenticated <span style="color: rgb(230, 32, 154);">==</span> <span style="color: rgb(85, 25, 182);">true</span>) {
+    <span style="color: rgb(230, 32, 154);">&dollar;</span>.<span style="color:rgb(25, 182, 230)">cookie</span>(<span style="color: rgb(230, 182, 93);">'loggedin'</span>, <span style="color: rgb(230, 182, 93);">'yes'</span>, { expires: <span style="color:rgb(85, 25, 182) ;">1</span>});
+  } <span style="color: rgb(230, 32, 154);">else if</span> (authenticated <span style="color: rgb(230, 32, 154);">==</span> <span style="color: rgb(85, 25, 182);">false</span> ) {
+    <span style="color: rgb(230, 32, 154);">&dollar;</span>(<span style="color: rgb(230, 182, 93);">"#error_message"</span>).show( ) ;
+  }
+});
+&lt;/<span style="color: rgb(230, 32, 154);">script</span>&gt;
+        </pre>
+    </code>
+</body>
+</html>

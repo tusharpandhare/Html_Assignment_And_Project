@@ -1,0 +1,127 @@
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ HTML Form
++ Assignment no        : 14
++ Title                : Create the contact form as depicted below using appropriate form element.
++ Start Date           : 10/feb/2020
++ End Date             : 10/feb/2020
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:rgb(20, 48, 58);
+            text-align: center;
+        }
+        h1{
+            color: white;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 400;
+           
+            font-size: 35px;
+        }
+        h1+p{
+            color: rgb(245, 239, 239);
+        }
+        
+        
+ 
+        form{
+            border: 2px solid white;
+            display: inline-block;
+            background-color:rgba(24, 23, 23,0.656);
+            padding: 40px;
+        }
+        p label{
+            display: block;
+            float: left;
+            color: white;
+            width: 200px;
+            text-align: left;
+            font-size: 17px;
+            padding-top: 10px;
+            
+        }
+       form p span{
+            color: white;
+            font-size: 20px;
+            display:block;
+            float: left;
+            width: 100px;
+           
+        }
+        p input{
+           width: 400px;
+           height: 42px;
+            
+        }
+        p textarea,p input{
+           background-color: rgb(41, 40, 40);
+           border: 2px solid rgb(235, 232, 232);
+           color: white;
+           font-size: 17px;
+        }
+        input::placeholder,textarea::placeholder{
+            color:rgb(92, 91, 91);
+        }
+        p{
+           
+            margin: 0;
+            padding: 0;
+            margin-top: 30px;
+        }
+        div input{
+            background-color: rgb(231, 65, 4);
+            color: white;
+            font-size:20px;
+            border: none;
+            width: 140px;
+            padding: 8px;
+            margin-top: 50px;
+            float:right;
+            margin-left: 20px;
+        }
+        footer+p{
+            margin-top: 20px;
+            color: white;
+        }
+     
+
+    </style>
+</head>
+<body>
+    <!--heading text for the form-->
+    <h1>ENQUIRY FORM</h1>
+    <!--hint/suggesion text for the form-->
+    <p>If you have any queries kindly take a moment to fill up this form. Our representives will contact you shortly.</p>
+    <br><br>
+    <!--form element start from here-->
+    <form action="#" method="GET" autocomplete="on">
+        <!--label and text box for name-->
+        <p><label for="name">Your Name</label><span>:</span><input type="text" id="name" placeholder="Customer Name" required autofocus/></p>
+        <!--label and input type email with required vallidation-->
+        <p><label for="email">Email Address</label><span>:</span><input type="email" id="email" placeholder="Mail@example.com" required/></p>
+        <!--label and input type number with min and max controls-->
+        <p><label for="bill">Bill Number</label><span>:</span><input type="text" id="bill" placeholder="Bill Number" required min="10" max="100"/></p>
+        <!--label and input type number with  maxlength vallidation output-->
+        <p><label for="phone">Phone Number</label><span>:</span><input type="tel" id="phone" placeholder="Your phone number" maxlength="10"/></p>
+        <!--textarea with lable vallidation is autocomplete ="off"-->
+        <p><label for="enquiry">Customer Enquiry</label><span>:</span><textarea id="enquiry" rows="7" cols="38" placeholder="Your Queries" autocomplete="off"></textarea></p>
+        <div>
+            <!--buttons section for submit and reset form-->
+            <input type="reset" value="RESET">
+            <input type="submit" value="SUBMIT">  
+        </div>
+    </form>
+    <!--footer content about information and copyright of form-->
+    <footer>
+        <p style="color: white;">&copy; 2016 Enquiry Form, All Right Reserved | Design by <span style="color: orangered; display: inline;">W3layout</span></p>
+    </footer>
+    </body>
+    </html>

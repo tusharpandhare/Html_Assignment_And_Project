@@ -1,0 +1,28 @@
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ HTML (media)
++ Assignment No    : 08
++ Title            : Create the webpage using frameset. Whenever user clicks the links in left side 
+                     output should be displayed in the right side.
+                      1. Whenever user clicks on the My Videos, display him the list of 5 videos that 
+                         should have a poster about the same. Display a title and description about the each video.
+                      2. Whenever user clicks on the My Audios, display him the list of 5 audio files in the 
+                         right side of the webpage. Display a title and description about the each audio.
++ START DATE       : 3/feb/2020
++ END DATE         : 3/feb/2020
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment mo. 8</title>
+</head>
+<!--the page will divide into two column frame as size 20% and 80%-->
+<frameset cols="30%,70%">
+    <!--defination of first 20% of frameset cols which has source file to left.html and this frame named as "left"-->
+    <frame src="left.html" name="left"></frame>
+    <!--defination of second 80% of frameset cols which has source file to right.html and this frame named as "right"-->
+    <frame src="right.html" name="right"></frame>
+</frameset>
+</html>

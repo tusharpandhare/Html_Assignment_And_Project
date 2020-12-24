@@ -1,0 +1,176 @@
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ HTML block layout
++ Assignment no    :  12
++ Title            :  Create the web page as depicted below using appropriate blocks and layout element.
+                      Use float and clear element to arrange the layout. Choose your own article which is
+                      trending at present. Images are uploaded in the drive.
++ Start Date       : 06/feb/2020
++ End Date         : 06/feb/2020
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            padding: 10px;
+            margin: 0;
+        }
+        header{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 200px;
+            display: block;
+            clear: both;
+        }
+        pre{
+            margin: 0;
+            padding:8px;
+            display: block;
+            clear: both;
+        }
+        section{
+            width: 371px;
+           
+            background-color:rgb(133, 121, 126);
+            margin: 0;
+            padding:0px;
+            display:block;
+            float: left;
+        }
+        section h1{
+            margin: 0;
+            padding: 10px;
+            background-color: rgb(80, 43, 59);
+            color: white;
+        }
+        section p{
+            padding:10px;
+            color: rgb(212, 212, 212);
+        }
+        section img{
+            margin: 10px;
+            padding: 0;
+        }
+        article{
+            width: 371px;
+              
+            
+            margin-left: 30px;
+            padding:0px;
+            display:block;
+            float: left;
+            border: 2px solid orange;
+        }
+        article h1{
+            margin: 0;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+        }
+        article p{
+            padding:10px;
+        }
+        footer{
+            width: 770px;
+            height: 281px;
+            display: block;
+            float: left;
+            margin-top: 30px;
+            margin-left: 30px;
+            padding: 0;
+            border: 2px solid brown;
+        }
+        footer h1{
+            background-color: brown;
+            margin: 0;
+            padding: 10px;
+            color: white;
+        }
+        footer dl{
+            width: 330px;
+            padding: 10px;
+            display: block;
+            float: left;
+
+        }
+        footer dl dt{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        footer dl dd{
+            padding-left: -30px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment no 12</title>
+</head>
+<body>
+    <!--header section contains a image-->
+    <header>
+        <img src="./images/header.PNG" width="100%" height="200px" >
+        
+    </header>
+    <!--pre contain the infotion about article like date and about-->
+    <pre>Term : Spring | Issue 1 | Date : August 19,2016</pre>
+    <!--article section start fromm here-->
+    <section>
+        <!--header of first article-->
+        <h1>TOPIC ONE   </h1>
+        <!--article content of first article with image-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, amet recusandae 
+            corporis quos beatae eaque dignissimos. Quis nulla dolorem eveniet accusantium 
+            excepturi sed voluptates aliquid ut, autem harum porro consectetur.<br><br> Lorem ipsum
+             dolor sit amet consectetur adipisicing elit. Labore perspiciatis dolor eaque quae 
+             et provident blanditiis obcaecati exercitationem itaque facere, 
+            cumque pariatur eum aliquam magnam? Est a natus placeat necessitatibus. <br><br> Lorem, 
+            ipsum dolor sit amet consectetur adipisicing elit. In odio, minima molestiae voluptatum 
+            error quia facere repellat officiis quos laborum, 
+            facilis possimus nobis, numquam expedita ipsum nam laudantium? Exercitationem, voluptate? </p>
+           <br> <img src="./images/sea.PNG" width="93%">
+    </section>
+    <article>
+        <!--header of second article-->
+        <h1>TOPIC TWO</h1>
+        <!--article content of second article with image-->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quis at, ut 
+            inventore minima vitae expedita eius officiis temporibus atque facere fuga, 
+            obcaecati quidem incidunt sunt neque esse accusamus non! Lorem ipsum dolor sit,<br><br> amet 
+            consectetur adipisicing elit. Eum consequuntur tempora praesentium sapiente enim. Tenetur, 
+            quibusdam ex incidunt, expedita debitis possimus sed ratione odit assumenda quis .<br><br><br><br><br><br><br></p>
+    </article>
+
+    <section style="margin-left: 30px;">
+        <!--header of third article-->
+        <h1>TOPIC THREE  </h1>
+        <!--article content of third article with image-->
+         <img src="./images/man_with_sea.PNG" width="35%" style="display: block; float: right;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, amet recusandae 
+            corporis quos beatae eaque dignissimos. Quis nulla dolorem eveniet accusantium 
+            excepturi sed voluptates aliquid ut, autem harum porro consectetur.<br><br> Lorem ipsum
+             dolor sit amet consectetur adipisicing elit. Labore perspiciatis dolor eaque quae 
+             et provident blanditiis obcaecati exercitationem itaque facere, <br><br><br><br><br><br>
+            </p>
+           
+    </section>
+    <!--footer section of article contain event and its date-->
+    <footer>
+        <h1>KEY DATES</h1>
+        <dl>
+            <dt>Date 1: Event Name</dt>
+            <p>veniam ipsa eligendi eum voluptates distinctio aut dignissim</p>
+            <dt>Date 2: Event Name</dt>
+            <p>veniam ipsa eligendi eum voluptates distinctio aut dignissim</p>
+        </dl>
+        <dl style="margin-left: 50px;">
+            <dt>Date 3: Event Name</dt>
+            <p>veniam ipsa eligendi eum voluptates distinctio aut dignissim</p>
+            <dt>Date 4: Event Name</dt>
+            <p>veniam ipsa eligendi eum voluptates distinctio aut dignissim</p>
+        </dl>
+    </footer>
+</body>
+</html>

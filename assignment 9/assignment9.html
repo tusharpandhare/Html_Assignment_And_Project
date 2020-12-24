@@ -1,0 +1,83 @@
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ HTML Table
++ Assignment No     : 09
++ Title             : Create the webpage to display image galley as shown below using table. You can add
+                      images of your choice, but should be in the same layout as depicted in the image.
++ Start Date        : 04/feb/2020
++ End Date          : 04/feb/2020
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            border-color: red;
+            width: 80%;
+            height: 900px;
+            background-color:rgb(236, 236, 181);
+        }
+        td{
+            width: 200px;
+            height: 200px;
+            padding: 0;
+        }
+        img{
+            display: block;
+        }
+        caption{
+            background-color: wheat;
+            color:purple;
+            height: 70px;
+            padding-top: 10px;
+            border:1px solid red;
+            font-size: 40px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment No 09</title>
+</head>
+<body>
+    <!-- start of table-->
+    <table border="1px,red" align="center">
+        <!-- Table head section contain table caption-->
+        <thead>
+            <caption style="background-color: khaki;">My Image Gallery</caption>
+        </thead>
+        <!--table body section-->
+        <tbody>
+            <!--first row of table body-->
+            <tr>
+                <td colspan="3"><img src="bird1.jpg" width="100%" height="100%"></td>
+                <td><img src="bird2.jpg" width="100%" height="100%"></td>
+                <td rowspan="3"><img src="bird3.jpg" width="100%" height="100%"></td>
+            </tr>
+            <!-- second row of table body-->
+            <tr>
+                <td><img src="bird4.jpg" width="100%" height="100%"></td>
+                <td rowspan="2"><img src="bird5.jpg" width="100%" height="100%"></td>
+                <td><img src="bird6.jpg" width="100%" height="100%"></td>
+                <td><img src="bird7.jpg" width="100%" height="100%"></td>
+            </tr>
+            <!--third row of table body-->
+            <tr>
+                <td rowspan="2"><img src="bird8.jpg" width="100%" height="100%"></td>
+                <td><img src="bird9.jpg" width="100%" height="100%"></td>
+                <td><img src="bird10.jpg" width="100%" height="100%"></td>
+            </tr>
+            <!--fourth row of table body-->
+            <tr>
+                <td colspan="3"><img src="bird11.jpg" width="100%" height="100%"></td>
+                <td><img src="bird12.jpg" width="100%" height="100%"></td>
+            </tr>
+            <!--fifth row of table body-->
+            <tr>
+                <td><img src="bird13.jpg" width="100%" height="100%"></td>
+                <td><img src="bird14.jpg" width="100%" height="100%"></td>
+                <td colspan="3"><img src="bird15.jpg" width="100%" height="100%"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

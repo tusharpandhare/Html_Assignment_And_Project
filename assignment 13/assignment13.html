@@ -1,0 +1,171 @@
+<!---+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++  HTML  (BLOCK & LAYOUT)
++  Assignment No     :  13
++  Title             :  Create the web page as depicted below using blocks and layout.
++  Start Date        :  07/feb/2020
++  End Date          :  07/feb/2020
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css style for blocks and Layout-->
+    <style>
+        body{
+            text-align: center;
+        }
+        header{
+            width: 100%;
+            background-color: rgb(37, 37, 37);
+            border: 1px solid rgb(37, 37, 37);
+        }
+        header h1{
+            color:white;
+           margin: 8px;
+            float: left;
+            margin-left: 250px;
+
+        }
+        header nav ul li,a{
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+           font-size: 17px; 
+            margin-left: 10px;
+            color: rgb(131, 130, 130);
+
+        }
+        section{
+            width: 700px;
+            
+            margin-left: 270px;
+        }
+        section img{
+            display: block;
+            float: left;
+            width: 300px;
+            height: 300px;
+        }
+       
+        section article aside{text
+            height: 300px;
+            margin-left: 370px;
+            
+        }
+        section article aside p{
+            display: block;
+            text-align: left;
+            padding-top: 100px;
+        }
+        article aside div, footer div{
+            background-color:rgb(16, 128, 100);
+            display: block;
+            float: left;
+            color: white;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+       article aside dl{
+           display: block;
+           float: left;
+           clear: right;
+           width: 250px;
+           margin: 0;
+           padding-left: 8px;
+           text-align: left;
+       }
+       article aside dl dt{
+           font-weight: bolder;
+           font-size:25px;
+       }
+section footer div{
+display: block;
+float: right;
+margin: 7px;
+}
+
+
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment no 13</title>
+</head>
+<body>
+    <!--Header Section of page contain heading and navigation bar-->
+    <header>
+        <!--heading of page-->
+        <h1>KURBAT</h1>
+        <!--navigation bar contain basic link displayed side of heading title-->
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COMPONENTS</a></li>
+                <li><a href="#">TYPE & GEN</a></li>
+                <li><a href="#">CHARTS</a></li>
+                <li><a href="#">BLOGS</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <!--center heading obout main content-->
+    <h3>RECENT POSTS</h3>
+    <!--main section start from here on-->
+ <section>
+    <!--this is one section contain image aside-->
+    <article>
+        <img src="./images/sea.PNG" alt="sorry image can't load">
+        <aside>
+             <!--displayed date with month-->
+            <div><span style="font-size: 20px;">01</span><br>jul</div>
+            <dl>
+                <!--information about image with its author and place-->
+                <dt>A View By The Sea</dt>
+                <dd>Paul jarvia&emsp;unplash</dd>
+                </dt>
+
+            </dl>
+            <!---paragraph for aside block-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio rerum libero, 
+            accusamus culpa vel eligendi, quis nostrum soluta aut ab a atque itaque obcaecati! Eos facilis 
+            ipsum non eum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vitae neque distinctio 
+               </p><br><br>
+            <div>Continue reading</div>
+
+        </aside>
+    </article>
+     <!--this is another section contain image aside-->
+    <article style="margin-top: 100px;">
+        <img src="./images/man_with_sea.PNG" alt="sorry image can't load">
+        <!--aside block contain top heading paragraoh and read more-->
+        <aside>
+            <!--displayed date with month-->
+            <div><span style="font-size: 20px;">25</span><br>jun</div>
+            <dl>
+                <!--information about image with its author and place-->
+                <dt>Man Fishing</dt>
+                <dd>Paul jarvia noida&emsp;unplash</dd>
+                </dt>
+
+            </dl>
+            <!--paragraph for displayed inside aside block-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio rerum libero, 
+            accusamus culpa vel eligendi, quis nostrum soluta aut ab a atque itaque obcaecati! Eos facilis 
+            ipsum non eum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vitae neque distinctio 
+              </p><br><br>
+            <div>Continue reading</div>
+
+        </aside>
+    </article>
+    <!--footer represent section right aligned page navigation like links-->
+    <footer style="margin-top:90px;"><div>&gt;</div><div>1</div><div>2</div><div>&lt;</div></footer>
+ </section>
+
+    
+</body>
+
+</html>
